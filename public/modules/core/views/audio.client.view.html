@@ -1,0 +1,353 @@
+<section>
+
+    <div data-ng-show="library != null && mediaTypeSelected">
+
+        <div class="flex-container-space-between header-container">
+
+            <div class="top-left-animation small-logo-container flex-container">
+                <div class="left-small-logo" data-ng-class="{ animateLogo: playing }"></div>
+                <div class="left-small-name">
+                    Weezzler
+                </div>
+            </div>
+
+            <div class="top-center-animation search-input-container" data-ng-show="!showPlayQueue">
+                <div class="magnifying-glass"></div>
+                <input placeholder="{{searchPlaceholder}}" type="text" class="search-input" data-ng-model="searchInput.text" data-ng-keyup="search()"/>
+                <span data-ng-class="{ hide: searchInput.text == undefined || searchInput.text == ''}" class="reset-search" data-ng-click="resetSearch()">x</span>
+            </div>
+
+            <div class="top-right-animation status-container">
+                <div class="connected" data-ng-show="isConnected == true">
+                    <span data-ng-show="spanish">Conectado</span>
+                    <span data-ng-show="!spanish">Connected</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="disconnected-container" data-ng-show="isConnected == false">
+            <a class="reconnection-loading-button reconnect-button" data-ng-show="reconnecting">
+                <div class="three-bounce-small">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </a>
+            <a class="main-button reconnect-button" data-ng-click="reconnect()" data-ng-show="!reconnecting">
+                <span data-ng-show="spanish">Reconectar</span>
+                <span data-ng-show="!spanish">Reconnect</span>
+            </a>
+            <div class="disconnected">
+                <span data-ng-show="spanish">Desconectado</span>
+                <span data-ng-show="!spanish">Disconnected</span>
+            </div>
+        </div>
+
+        <div class="reconnect-tip" data-ng-show="isConnected == false && !tipAlreadyDisplayed">
+            <span data-ng-show="spanish">Si se perdió la conexión, probá abriendo la aplicación en tu teléfono nuevamente y después hacé click en el botón "Reconectar". Si nunca cerraste la ventana del navegador no necesitás ingresar el código de nuevo.</span>
+            <span data-ng-show="!spanish">If the connection was lost, try reopening the app in your phone and then click the "Reconnect" button. If you never closed your browser window you don't have to enter the code again.</span>
+        </div>
+
+        <div class="top-center-animation-second flex-container-space-around media-links-container">
+
+            <a class="animated-link" href="" data-ng-click="showAllArtists()">
+                <span data-ng-show="spanish">Artistas</span>
+                <span data-ng-show="!spanish">Artists</span>
+                <span class="underline"></span>
+            </a>
+
+            <a class="animated-link" href="" data-ng-click="showAllAlbums()">
+                <span data-ng-show="spanish">Albumes</span>
+                <span data-ng-show="!spanish">Albums</span>
+                <span class="underline"></span>
+            </a>
+
+            <a class="animated-link" href="" data-ng-click="showAllSongs()">
+                <span data-ng-show="spanish">Canciones</span>
+                <span data-ng-show="!spanish">Songs</span>
+                <span class="underline"></span>
+            </a>
+
+        </div>
+
+        <div class="horizontal-top-banner-ad-container">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- audio-page-top-ad -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-6892550707080459"
+                 data-ad-slot="6256204590"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <div data-ng-show="!showPlayQueue">
+
+            <!-- Selection Header-->
+            <div class="flex-container-space-between selection-header-container">
+
+                <div class="center-left-animation selected-title" data-ng-class="{showList: currentView == 'all' || currentView == 'allAlbums' || currentView == 'allSongs', hideList: currentView != 'all' && currentView != 'allAlbums' && currentView != 'allSongs'}">
+                    <ng-pluralize data-ng-show="spanish" count="library.length"
+                                  when="{'1': '{{library.length}} Artista',
+                                              'other': '{{library.length}} Artistas'}">
+                    </ng-pluralize>
+                    <ng-pluralize data-ng-show="!spanish" count="library.length"
+                                  when="{'1': '{{library.length}} Artist',
+                                              'other': '{{library.length}} Artists'}">
+                    </ng-pluralize>
+                    <span class="medium-subtitle">
+                        <ng-pluralize data-ng-show="spanish" count="allAlbums.length"
+                                      when="{'1': '{{allAlbums.length}} álbum',
+                                      'other': '{{allAlbums.length}} álbumes'}">
+                        </ng-pluralize>
+                        <ng-pluralize data-ng-show="!spanish" count="allAlbums.length"
+                                      when="{'1': '{{allAlbums.length}} album',
+                                     'other': '{{allAlbums.length}} albums'}">
+                        </ng-pluralize>,
+                        <ng-pluralize data-ng-show="spanish" count="allSongs.length"
+                                      when="{'1': '{{allSongs.length}} canción',
+                                      'other': '{{allSongs.length}} canciones'}">
+                        </ng-pluralize>
+                        <ng-pluralize data-ng-show="!spanish" count="allSongs.length"
+                                      when="{'1': '{{allSongs.length}} song',
+                                      'other': '{{allSongs.length}} songs'}">
+                        </ng-pluralize>
+                    </span>
+                </div>
+
+                <div class="center-left-animation selected-title" data-ng-class="{showList: currentView == 'artist', hideList: currentView != 'artist' && currentView != 'allAlbums'}">
+                    {{selectedArtist.Name}}
+                    <span class="medium-subtitle">
+                        <ng-pluralize data-ng-show="spanish" count="selectedArtist.Albums.length"
+                                      when="{'1': '{{selectedArtist.Albums.length}} álbum',
+                                      'other': '{{selectedArtist.Albums.length}} álbumes'}">
+                        </ng-pluralize>
+                        <ng-pluralize data-ng-show="!spanish" count="selectedArtist.Albums.length"
+                                      when="{'1': '{{selectedArtist.Albums.length}} album',
+                                     'other': '{{selectedArtist.Albums.length}} albums'}">
+                        </ng-pluralize>
+                    </span>
+                </div>
+
+                <div class="center-left-animation selected-title" data-ng-class="{showList: currentView == 'album', hideList: currentView != 'album' && currentView != 'allSongs'}">
+                    {{selectedAlbum.Name}}
+                    <span class="medium-subtitle selectable-container" data-ng-show="selectedArtist != null" data-ng-click="navigateToAlbums(selectedArtist, false)">{{selectedArtist.Name}}</span>
+                    <span class="medium-subtitle" data-ng-show="selectedArtist == null && selectedAlbum.ArtistName != ''" >{{selectedAlbum.ArtistName}}</span>
+                </div>
+
+                <div class="center-right-animation play-buttons-container">
+                    <a class="main-button small-button" data-ng-click="playAll()">
+                        <span data-ng-show="spanish">Reproducir todo</span>
+                        <span data-ng-show="!spanish">Play all</span>
+                    </a>
+                    <a class="main-button small-button" data-ng-click="playAll(true)">
+                        <span data-ng-show="spanish">Reproducción aleatoria</span>
+                        <span data-ng-show="!spanish">Shuffle all</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Artists List -->
+            <div class="selected-items-container list-item-animation" data-ng-class="{showList: currentView == 'all', hideList: currentView != 'all'}">
+
+                <div class="item-separator"></div>
+
+                <div data-ng-repeat="artist in artists">
+
+                    <div class="flex-container-space-between item-container">
+
+                        <div class="flex-container">
+
+                            <a class="media-button smallPlayButton" data-ng-click="navigateToAlbums(artist, true)"></a>
+                            <a class="media-button smallAddToQueueButton" data-ng-show="playList" data-ng-click="addArtistToList(artist, true)"></a>
+
+                            <div class="selectable-container" data-ng-click="navigateToAlbums(artist)">
+                                {{artist.Name}}
+                            </div>
+                        </div>
+
+                        <div class="small-subtitle">
+                            <ng-pluralize data-ng-show="spanish" count="artist.Albums.length"
+                                          when="{'1': '{{artist.Albums.length}} álbum',
+                                          'other': '{{artist.Albums.length}} álbumes'}">
+                            </ng-pluralize>
+                            <ng-pluralize data-ng-show="!spanish" count="artist.Albums.length"
+                                          when="{'1': '{{artist.Albums.length}} album',
+                                          'other': '{{artist.Albums.length}} albums'}">
+                            </ng-pluralize>
+                        </div>
+                    </div>
+
+                    <div class="item-separator"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Albums List-->
+            <div class="selected-items-container" data-ng-class="{showList: currentView == 'artist' || currentView == 'allAlbums', hideList: currentView != 'artist' && currentView != 'allAlbums'}">
+
+                <div class="item-separator"></div>
+
+                <div class="list-item-animation" data-ng-repeat="album in albums">
+
+                    <div class="flex-container-space-between item-container">
+
+                        <div class="flex-container">
+
+                            <a class="media-button smallPlayButton" data-ng-click="navigateToSongs(album, true)"></a>
+                            <a class="media-button smallAddToQueueButton" data-ng-show="playList" data-ng-click="addAlbumToList(album)"></a>
+
+                            <div class="selectable-container" data-ng-click="navigateToSongs(album)">
+                                {{album.Name}}
+                            </div>
+                        </div>
+
+                        <div class="small-subtitle">
+                            <span data-ng-show="currentView == 'allAlbums'">{{album.ArtistName}} - </span>
+                            <ng-pluralize data-ng-show="spanish" count="album.Songs.length"
+                                          when="{'1': '{{album.Songs.length}} canción',
+                                          'other': '{{album.Songs.length}} canciones'}">
+                            </ng-pluralize>
+                            <ng-pluralize data-ng-show="!spanish" count="album.Songs.length"
+                                          when="{'1': '{{album.Songs.length}} song',
+                                          'other': '{{album.Songs.length}} songs'}">
+                            </ng-pluralize>
+                        </div>
+                    </div>
+
+                    <div class="item-separator"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Songs List-->
+            <div class="selected-items-container" data-ng-class="{showList: currentView == 'album' || currentView == 'allSongs', hideList: currentView != 'album' && currentView != 'allSongs'}">
+
+                <div class="item-separator"></div>
+
+                <div class="list-item-animation" data-ng-repeat="song in songs">
+
+                    <div class="flex-container-space-between item-container">
+
+                        <div class="flex-container">
+
+                            <a class="media-button smallPlayButton" data-ng-click="playSong(song, $index)"></a>
+                            <a class="media-button smallAddToQueueButton" data-ng-show="playList" data-ng-click="addSongToList(song)"></a>
+
+                            <div class="selectable-container" data-ng-click="playSong(song, $index)">
+                                {{song.Name}}
+                            </div>
+                        </div>
+
+                        <div class="small-subtitle">
+                            <span data-ng-show="currentView == 'allSongs'">{{song.ArtistName}} - </span>
+                            {{song.Duration}}
+                        </div>
+                    </div>
+
+                    <div class="item-separator"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div data-ng-show="showPlayQueue">
+
+            <div class="flex-container-space-between selection-header-container">
+
+                <div class="center-left-animation selected-title">
+                    <span data-ng-show="spanish">Cola de reproducción</span>
+                    <span data-ng-show="!spanish">Play queue</span>
+                </div>
+
+                <div class="center-right-animation play-buttons-container">
+                    <a class="main-button small-button" data-ng-click="clearQueue()">
+                        <span data-ng-show="spanish">Limpiar</span>
+                        <span data-ng-show="!spanish">Clear</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Play List -->
+            <div class="selected-items-container">
+
+                <div class="item-separator"></div>
+
+                <div class="play-queue-empty-message" data-ng-show="playList && playList.length == 0">
+                    <span data-ng-show="spanish">La cola de reproducción está vacía.</span>
+                    <span data-ng-show="!spanish">The play queue is empty.</span>
+                </div>
+
+                <div class="list-item-animation" data-ng-repeat="song in playList">
+
+                    <div class="flex-container-space-between item-container">
+
+                        <div class="flex-container">
+                            <a class="media-button smallPlayButton" data-ng-click="play(song, $index)"></a>
+
+                            <div class="selectable-container" data-ng-click="play(song, $index)" data-ng-class="{playingNow: song.isPlaying}">
+                                {{song.Name}}
+                            </div>
+                        </div>
+
+                        <div class="small-subtitle">
+                            {{song.ArtistName}} - {{song.Duration}}
+                        </div>
+                    </div>
+
+                    <div class="item-separator"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Media Player-->
+        <div class="player-container bottom-center-animation" data-ng-class="{ displayFlex: playingSong != null }">
+
+            <div class="center-bottom-animation cb1 playing-info">
+                <span>{{playingSong.Name}}</span><br />
+                <span class="artist-album-container">{{playingArtist.Name}} - {{playingAlbum.Name}}</span>
+            </div>
+
+            <div class="flex-container-space-between progress-bar-container">
+                <div class="song-time">{{elapsedTime}}</div>
+                <progress id="seekBar" value="0" max="1"></progress>
+                <div class="song-time">{{songDuration}}</div>
+            </div>
+
+            <div class="center-bottom-animation cb3 player-buttons-container">
+                <a class="media-button" data-ng-click="shuffle(true)"
+                   data-ng-class="{shuffleButton : shuffleOn, shuffleButtonDisabled: !shuffleOn}"></a>
+                <a class="media-button previous-button" data-ng-click="previousSong()"></a>
+                <a class="media-button pauseButton" data-ng-click="playPause()" data-ng-class="{pauseButton: playing, playButton: !playing}"></a>
+                <a class="media-button next-button" data-ng-click="nextSong()"></a>
+                <a class="media-button" data-ng-click="viewPlayQueue()"
+                   data-ng-class="{playQueueButton : showPlayQueue, playQueueButtonDisabled: !showPlayQueue}"></a>
+            </div>
+
+            <div class="center-bottom-animation cb4 volume-control-container">
+                <a class="volume-down-icon"></a>
+                <input id="volumeControl" type="range" value="100" data-ng-mouseup="updateVolume()">
+                <a class="volume-up-icon"></a>
+            </div>
+
+            <div class="ng-hide">
+                <audio controls id="audioPlayer">
+                    <source data-ng-src="{{trustSrc(songUrl)}}" type="audio/mpeg">
+                </audio>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

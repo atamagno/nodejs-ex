@@ -2,8 +2,139 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab78edc5-6608-4e32-b7af-a6818929879e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/index-old.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/android-chrome-192x192.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular/angular.min.js.gzip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/apple-touch-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/big-screen-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/british_flag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/easy-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/favicon-16x16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/favicon-32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/free-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/google-play-badge.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ic_pause_black_48dp_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ic_play_arrow_black_48dp_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ic_playlist_add_black_48dp_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ic_queue_music_gray_48dp_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ic_queue_music_green_48dp_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ic_search_gray_48dp_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ic_shuffle_gray_48dp_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ic_shuffle_green_48dp_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ic_skip_next_black_48dp_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ic_skip_previous_black_48dp_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ic_volume_down_black_48dp_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ic_volume_up_black_48dp_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/mstile-150x150.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/no-hardware-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/remote-control-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/spanish_flag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/speakers-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/web-background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/web-main-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-cookies/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-resource/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-utils/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-utils/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/404.server.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/500.server.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-utils/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-cookies/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-resource/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-cookies/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-resource/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/views/about.client.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/env/all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-cookies/angular-cookies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-cookies/angular-cookies.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-cookies/angular-cookies.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular/angular-csp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-resource/angular-resource.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-resource/angular-resource.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-resource/angular-resource.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/release/angular-ui-router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/release/angular-ui-router.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular/angular.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/utils/animations.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/arrow.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/.well-known/assetlinks.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/views/audio.client.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/utils/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-cookies/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-resource/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-utils/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/browserconfig.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/src/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/views/connect.client.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/connection.server.model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/services/connections.client.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/connections.server.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes/connections.server.routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/core.client.module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/config/core.client.routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/core.server.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes/core.server.routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/env/development.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/errors.server.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/express.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/controllers/extras.client.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/views/help.client.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/controllers/home.client.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/css/home.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-cookies/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-resource/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/index.server.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/utils/jquery.easing.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/utils/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layout.server.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/views/main.client.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-old.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-cookies/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-resource/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/views/privacy.client.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/src/resolve.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/safari-pinned-tab.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server-old.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/src/state.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/src/stateDirectives.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/src/stateFilters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/src/templateFactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-utils/ui-utils-ieshiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-utils/ui-utils-ieshiv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-utils/ui-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-utils/ui-utils.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/src/urlMatcherFactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/src/urlRouter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/core/views/video.client.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/src/view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/src/viewDirective.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/libs/angular-ui-router/src/viewScroll.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/app_test.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.html" afterPath="$PROJECT_DIR$/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="openshift-v3-musicapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,61 +155,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
+      <file leaf-file-name="server-old.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server-old.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.814815">
+            <state vertical-scroll-proportion="0.0">
               <caret line="12" column="76" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="development.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/env/development.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.8333333">
-              <caret line="198" column="50" selection-start-line="198" selection-start-column="41" selection-end-line="198" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.31914893">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index-old.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index-old.html">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.72549">
-              <caret line="33" column="214" selection-start-line="33" selection-start-column="214" selection-end-line="33" selection-end-column="214" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nodejs-mongodb.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openshift/templates/nodejs-mongodb.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5294118">
-              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nodejs-mongodb-persistent.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openshift/templates/nodejs-mongodb-persistent.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.1176472">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49744898">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -93,7 +194,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/views/index-old.html" />
+        <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/views/index.html" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/config/env/development.js" />
       </list>
     </option>
   </component>
@@ -105,7 +209,7 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="38" />
+    <option name="x" value="91" />
     <option name="y" value="23" />
     <option name="width" value="1386" />
     <option name="height" value="811" />
@@ -161,7 +265,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -175,25 +279,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="openshift" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openshift-v3-musicapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openshift-v3-musicapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openshift" />
+              <option name="myItemId" value="env" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -212,6 +302,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/views" />
     </key>
   </component>
@@ -266,10 +359,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="23" width="1386" height="811" extended-state="0" />
+    <frame x="91" y="23" width="1386" height="811" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963924" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23520924" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -293,38 +386,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>15</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>16</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>43</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>97</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>38</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager>
@@ -353,14 +414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.814815">
-          <caret line="12" column="76" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.8333333">
@@ -371,16 +424,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index-old.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.72549">
-          <caret line="33" column="214" selection-start-line="33" selection-start-column="214" selection-end-line="33" selection-end-column="214" />
+        <state vertical-scroll-proportion="-8.0">
+          <caret line="93" column="52" selection-start-line="93" selection-start-column="46" selection-end-line="93" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49744898">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.0588236">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-old.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/libs/angular/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41489363">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-old.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="76" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31914893">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="22" />
           <folding />
         </state>
       </provider>

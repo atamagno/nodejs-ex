@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-6892550707080459",
+		enable_page_level_ads: true
+	  });
+	</script>-->
+	
+	<meta name="msvalidate.01" content="9676686A42F6C413720158E11E162BEB" />
+
+	<title>{{title}}</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Play music and videos from your phone in your computer wirelessly. Take your media library anywhere and play it in your browser in a few easy steps. Weezzler converts your phone into a media file server and uses it to stream music and videos over wifi.">
+	<meta name="keywords" content="stream, music, videos, wifi, android, mobile, phone, anywhere, device, listen, connect, wireless, speakers, computer, browser, play, easy, server, air, weezzler" />
+
+	<base href="/">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/images/manifest.json">
+	<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#00cc7a">
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<meta name="msapplication-config" content="/images/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	{% for cssFile in cssFiles %}<link rel="stylesheet" href="{{cssFile}}">{% endfor %}
+
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+	<script src="/utils/jquery.min.js"></script>
+	<script src="/utils/bootstrap.min.js"></script>
+	<script src="/utils/jquery.easing.min.js"></script>
+
+	{% for jsFile in jsFiles %}<script type="text/javascript" src="{{jsFile}}"></script>{% endfor %}
+
+	<!--<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-81181392-1', 'auto');
+		ga('send', 'pageview');
+	</script>-->
+
+</head>
+
+<body class="ng-cloak">
+	<section class="container">
+		{% block content %}{% endblock %}
+	</section>
+
+	<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50800b9d5d679bcb"></script>-->
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<div data-ng-controller="HomeController" class="home-container">
+
+    <div class="notification error-message center-text" data-ng-class="{ displayMessage: errorVisible }" data-ng-click="hideMessage()">
+        {{errorMessage}}
+    </div>
+
+    <div class="notification success-message center-text" data-ng-class="{ displayMessage: successVisible }" data-ng-click="hideMessage()">
+        {{errorMessage}}
+    </div>
+
+    <div class="logo-container center-text" data-ng-class="{ moveUpOutsideScreen: !loadingLibrary && codeSent && mediaTypeSelected }">
+
+        <img src="/images/web-main-logo.png" height="100" alt="Weezzler" />
+        <br>
+        Weezzler
+    </div>
+
+    <div class="loading-animation-container center-text" data-ng-show="loadingLibrary">
+        <div class="three-bounce">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <div class="loading-description">
+            <span data-ng-show="spanish">Cargando biblioteca...</span>
+            <span data-ng-show="!spanish">Loading music library...</span>
+        </div>
+    </div>
+
+    <div class="format-selection-description-container center-text" data-ng-show="!mediaTypeSelected && codeSent && !loadingLibrary">
+        <span data-ng-show="spanish">Elegí el formato que querés reproducir.</span>
+        <span data-ng-show="!spanish">Select the type of media you want to play.</span>
+    </div>
+    
+    <div id="mediaTypeButtonsContainer" class="center-text" data-ng-show="codeSent && !mediaTypeSelected && newVersion">
+        <div>
+            <a id="audioButton" class="main-button big-button format-button" data-ng-click="selectMediaType('audio');" data-ng-show="!selectedMediaType || selectedMediaType == 'video'">Audio</a>
+        </div>
+        <div>
+            <a id="videoButton" class="main-button big-button format-button" data-ng-click="selectMediaType('video');" data-ng-show="!selectedMediaType || selectedMediaType == 'audio'">Video</a>
+        </div>
+    </div>
+
+    <div class="home-description-container center-text" data-ng-show="!codeSent">
+
+        <div class="enter-code-description-container">
+            <span data-ng-show="spanish">Ingresá el código que obtuviste en la aplicación de tu teléfono.</span>
+            <span data-ng-show="!spanish">Enter the code you got from the app in your phone.</span>
+        </div>
+
+        <div class="code-input-contanier">
+            <input id="codeInput" type="text" data-ng-model="uniqueCode" data-ng-keypress="$event.keyCode == 13 && connect()"/>
+        </div>
+
+        <div class="connect-button-container">
+            <a data-ng-click="connect()" class="main-button big-button">
+                <span data-ng-show="spanish">Enviar código</span>
+                <span data-ng-show="!spanish">Send code</span>
+            </a>
+
+            <div class="last-code-button-container" data-ng-show="lastCode">
+                <a data-ng-click="connect(lastCode)" class="main-button big-button">
+                    <span data-ng-show="spanish">Conectar usando el último código</span>
+                    <span data-ng-show="!spanish">Connect using last code</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="connection-tips-container">
+            <div class="tips-title">
+                <span data-ng-show="spanish">Pasos para conectarse</span>
+                <span data-ng-show="!spanish">Connection steps</span>
+            </div>
+            <div class="tips-list-container">
+                <div class="first-tip">
+                    <span data-ng-show="spanish">1. Asegurate de que tu computadora y tu teléfono estén <b>conectados a la misma red wifi.</b></span>
+                    <span data-ng-show="!spanish">1. Make sure your computer and your phone are <b>connected to the same wifi network.</b></span>
+                </div>
+                <div class="first-tip">
+                    <span data-ng-show="spanish">2. Abrí la aplicación en tu teléfono y vas a obtener un código para la conexión.</span>
+                    <span data-ng-show="!spanish">2. Open the app in your phone and you'll get a connection code.</span>
+                </div>
+                <div>
+                    <span data-ng-show="spanish">3. Ingresá el código y empezá a disfrutar de tu música y videos.</span>
+                    <span data-ng-show="!spanish">3. Enter the code and start enjoying your music and videos.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="horizontal-banner-ad-container">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- connect-page-bottom-ad -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-6892550707080459"
+                 data-ad-slot="4861138549"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <section data-ui-view></section>
+
+    <div class="flex-container-space-between footer-elements-container">
+
+        <div class="bottom-center-animation secondary-format-selection" data-ng-show="mediaTypeSelected && newVersion"
+             data-ng-class="{ mediaTypeButtonPlaying: playingSong != null }">
+            <a class="main-button small-button format-button" data-ng-click="selectMediaType('audio');" data-ng-show="!selectedMediaType || selectedMediaType == 'video'">
+                <span data-ng-show="spanish">Cambiar a audio</span>
+                <span data-ng-show="!spanish">Switch to audio</span>
+            </a>
+            <a class="main-button small-button format-button" data-ng-click="selectMediaType('video');" data-ng-show="!selectedMediaType || selectedMediaType == 'audio'">
+                <span data-ng-show="spanish">Cambiar a video</span>
+                <span data-ng-show="!spanish">Switch to video</span>
+            </a>
+        </div>
+
+        <div class="center-left-animation flex-container">
+
+            <div class="addthis_inline_follow_toolbox follow-buttons-container"></div>
+
+            <div class="info-links-container">
+
+                <a class="animated-link info-link" href="/about" target="_blank">
+                    <span data-ng-show="spanish" class="white-background">Acerca de</span>
+                    <span data-ng-show="!spanish" class="white-background">About</span>
+                    <span class="underline"></span>
+                </a>
+                <a class="animated-link info-link" href="/help" target="_blank">
+                    <span data-ng-show="spanish" class="white-background">Ayuda</span>
+                    <span data-ng-show="!spanish" class="white-background">Help</span>
+                    <span class="underline"></span>
+                </a>
+                <a class="animated-link info-link" href="/privacy" target="_blank">
+                    <span data-ng-show="spanish" class="white-background">Privacidad</span>
+                    <span data-ng-show="!spanish" class="white-background">Privacy</span>
+                    <span class="underline"></span>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="center-right-animation flex-container">
+            <div class="flag britishFlag" data-ng-class="{ spanishFlag: spanish }" data-ng-click="changeLanguage()"></div>
+            <a class="animated-link language-change" href="" data-ng-click="changeLanguage()">
+                <span data-ng-show="spanish">Cambiar Idioma</span>
+                <span data-ng-show="!spanish">Change Language</span>
+                <span class="underline"></span>
+            </a>
+        </div>
+
+    </div>
+
+</div>

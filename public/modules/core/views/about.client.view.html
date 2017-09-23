@@ -1,0 +1,104 @@
+<div data-ng-controller="ExtrasController">
+
+    <div class="flex-container-space-between header-container">
+
+        <div class="small-logo-container flex-container">
+            <div class="left-small-logo"></div>
+            <div class="left-small-name">
+                Weezzler
+            </div>
+        </div>
+    </div>
+
+    <div class="horizontal-top-banner-ad-container">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- about-page-top-ad -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:728px;height:90px"
+             data-ad-client="ca-pub-6892550707080459"
+             data-ad-slot="9013395720"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <div class="flex-container-space-between selection-header-container">
+
+        <div class="selected-title">
+            <span data-ng-show="spanish">Acerca de</span>
+            <span data-ng-show="!spanish">About</span>
+        </div>
+
+    </div>
+
+    <div class="main-separator"></div>
+
+    <div class="displayFlex">
+
+        <div class="about-container">
+
+            <div class="paragraph">
+                <span data-ng-show="spanish">Weezzler es una aplicación para Android que te permite escuchar la música y ver los videos de tu teléfono en cualquier navegador usando una conexión wifi.</span>
+                <span data-ng-show="!spanish">Weezzler is an Android app that lets you listen to the music and watch the videos in your phone in any browser over a wifi connection.</span>
+            </div>
+
+            <div class="paragraph">
+                <span data-ng-show="spanish">Olvidate de los cables y escuchá tu música en altavoces o mirá tus videos en una pantalla grande de forma inalámbrica en dos simples pasos. Sólo tenés que abrir la aplicación en tu teléfono y vas a obtener un código. Luego en <span class="fake-link">www.weezzler.com</span> ingresás el código y listo, podés elegir controlar tu biblioteca desde el navegador o usar tu teléfono como control remoto.</span>
+                <span data-ng-show="!spanish">Forget about cables and listen to your music on speakers or watch your videos wirelessly in two simple steps. All you have to do is open the app in your phone and you’ll get a code. Then go to  <span class="fake-link">www.weezzler.com</span>, enter the code and you are ready to go, you can choose to navigate through your media library from the browser or use your phone as a remote control.</span>
+            </div>
+
+            <div class="paragraph">
+                <span data-ng-show="spanish">Con Weezzler podes llevar tu música y videos a cualquier lugar y reproducirlos sin la necesidad de hardware adicional o la creación de un usuario.</span>
+                <span data-ng-show="!spanish">With Weezzler you can take your music and videos anywhere and play them without the need of extra hardware or having to create a user.</span>
+            </div>
+
+            <div class="paragraph">
+                <span data-ng-show="spanish">Tenés mas preguntas? Consultá la <a class="fake-link help-link" href="/help">ayuda</a>.</span>
+                <span data-ng-show="!spanish">Do you have more questions? Check the <a class="fake-link help-link" href="/help">help</a>.</span>
+            </div>
+
+            <span data-ng-show="spanish">Podés escribirnos a nuestra <a href="mailto:weezzler@gmail.com" class="fake-link">dirección</a> de correo electrónico con preguntas o sugerencias.</span>
+            <span data-ng-show="!spanish">You can always write to us via <a href="mailto:weezzler@gmail.com" class="fake-link">email</a> with any questions or suggestions.</span>
+
+        </div>
+
+    </div>
+
+    <div class="flex-container-space-between footer-elements-container">
+
+        <div class="flex-container">
+
+            <div class="addthis_inline_follow_toolbox follow-buttons-container"></div>
+
+            <div class="info-links-container">
+
+                <a class="animated-link info-link" href="/about">
+                    <span data-ng-show="spanish" class="white-background">Acerca de</span>
+                    <span data-ng-show="!spanish" class="white-background">About</span>
+                    <span class="underline"></span>
+                </a>
+                <a class="animated-link info-link" href="/help">
+                    <span data-ng-show="spanish" class="white-background">Ayuda</span>
+                    <span data-ng-show="!spanish" class="white-background">Help</span>
+                    <span class="underline"></span>
+                </a>
+                <a class="animated-link info-link" href="/privacy">
+                    <span data-ng-show="spanish" class="white-background">Privacidad</span>
+                    <span data-ng-show="!spanish" class="white-background">Privacy</span>
+                    <span class="underline"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="flag britishFlag" data-ng-class="{ spanishFlag: spanish }" data-ng-click="changeLanguage()"></div>
+            <a class="animated-link language-change" href="" data-ng-click="changeLanguage()">
+                <span data-ng-show="spanish">Cambiar Idioma</span>
+                <span data-ng-show="!spanish">Change Language</span>
+                <span class="underline"></span>
+            </a>
+        </div>
+
+    </div>
+
+</div>
