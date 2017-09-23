@@ -10,7 +10,6 @@ module.exports = {
 
 	dbConnectionString : function()
 	{
-		//return 'mongodb://localhost/musicstream';
-		return 'mongodb://userHWO:iJPa7ToVdNPpt5ke@127.0.0.1:27017/sampledb';
+		return 'mongodb://localhost/musicstream';
 	}
 };

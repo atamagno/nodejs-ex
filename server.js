@@ -3,7 +3,7 @@ var init = require('./config/init')(),
     mongoose = require('mongoose');
 
 // Bootstrap db connection
-var db = mongoose.connect(config.dbConnectionString(), function(err) {
+var db = mongoose.connect('mongodb://userHWO:iJPa7ToVdNPpt5ke@127.0.0.1:27017/sampledb', function(err) {
     if (err) {
         console.error('Could not connect to MongoDB!');
         console.log(err);
