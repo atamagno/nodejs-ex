@@ -34,6 +34,9 @@ var db = null,
 
 //mongoURL = 'mongodb://localhost/musicstream';
 
+console.log('mongoURL: %s', mongoURL);
+
+/*
 if (mongoURL != null) {
   db = mongoose.connect(mongoURL, function(err) {
     if (err) {
@@ -45,8 +48,10 @@ if (mongoURL != null) {
     console.log('Connected to MongoDB at: %s', mongoURL);
   });
 }
+*/
 
-var app = require('./config/express')(db);
+//var app = require('./config/express')(db);
+var app = require('./config/express')();
 
 var initDb = function(callback) {
   if (mongoURL == null) return;
