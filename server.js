@@ -1,14 +1,10 @@
 var init = require('./config/init')(),
     config = require('./config/config'),
-    mongoose = require('mongoose'),
-    morgan  = require('morgan');
+    mongoose = require('mongoose');
 
 Object.assign=require('object-assign')
 
 var app = require('./config/express')();
-
-app.engine('html', require('ejs').renderFile);
-app.use(morgan('combined'));
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
