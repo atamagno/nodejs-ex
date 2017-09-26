@@ -103,7 +103,7 @@ Looking at the repo, you'll notice three files in the openshift/template directo
 	│       └── nodejs-mongodb-persistent.json
 	├── package.json
 	├── README.md
-	├── server.js
+	├── server-original.js
 	├── tests
 	│   └── app_test.js
 	└── views
