@@ -1,15 +1,13 @@
-//  OpenShift sample Node application
-var express = require('express'),
-    app     = express(),
-    morgan  = require('morgan'),
-    init = require('./config/init')(),
+var init = require('./config/init')(),
     config = require('./config/config'),
-    mongoose = require('mongoose');
-    
+    morgan  = require('morgan');
+
 Object.assign=require('object-assign')
 
+var app = require('./config/express')();
+
 app.engine('html', require('ejs').renderFile);
-app.use(morgan('combined'))
+app.use(morgan('combined'));
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
@@ -22,7 +20,7 @@ if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
       mongoPort = process.env[mongoServiceName + '_SERVICE_PORT'],
       mongoDatabase = process.env[mongoServiceName + '_DATABASE'],
       mongoPassword = process.env[mongoServiceName + '_PASSWORD']
-      mongoUser = process.env[mongoServiceName + '_USER'];
+  mongoUser = process.env[mongoServiceName + '_USER'];
 
   if (mongoHost && mongoPort && mongoDatabase) {
     mongoURLLabel = mongoURL = 'mongodb://';
@@ -35,6 +33,7 @@ if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
 
   }
 }
+
 var db = null,
     dbDetails = new Object();
 
@@ -105,4 +104,4 @@ initDb(function(err){
 app.listen(port, ip);
 console.log('Server running on http://%s:%s', ip, port);
 
-module.exports = app;
+module.exports = app ;
