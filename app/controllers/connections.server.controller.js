@@ -4,7 +4,6 @@
  * Module dependencies.
  */
 
-    /*
 var mongoose = require('mongoose'),
     errorHandler = require('./errors.server.controller'),
     Connection = mongoose.model('Connection'),
@@ -80,4 +79,3 @@ function generateUniqueCode() {
 
   return code;
 };
-        */

@@ -7,12 +7,11 @@ var express        = require('express'),
     path           = require('path'),
     mongoStore     = require('connect-mongo')(session),
     consolidate    = require('consolidate'),
-    morgan         = require('morgan'),
+    //morgan         = require('morgan'),
     config         = require('./config');
 
 // configuration ===========================================
-//module.exports = function(db) {
-module.exports = function() {
+module.exports = function(db) {
 
     config.getGlobbedFiles('./app/models/*.js').forEach(function(modelPath) {
         require(path.resolve(modelPath));
@@ -42,22 +41,19 @@ module.exports = function() {
     // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
     app.use(methodOverride());
 
-    /*
-     // Express MongoDB session storage
-     app.use(session({
-     saveUninitialized: true,
-     resave: true,
-     secret: config.sessionSecret,
-     store: new mongoStore({
-     mongooseConnection: db.connection,
-     collection: config.sessionCollection
-     })
-     }));
-     */
+    // Express MongoDB session storage
+    app.use(session({
+        saveUninitialized: true,
+        resave: true,
+        secret: config.sessionSecret,
+        store: new mongoStore({
+            mongooseConnection: db.connection,
+            collection: config.sessionCollection
+        })
+    }));
 
     // set the static files location /public/img will be /img for users
     app.use(express.static(path.resolve('./public')));
-
 
     // globbing routing files
     config.getGlobbedFiles('./app/routes/**/*.js').forEach(function(routePath) {

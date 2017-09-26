@@ -4,8 +4,6 @@ var init = require('./config/init')(),
 
 Object.assign=require('object-assign')
 
-var app = require('./config/express')();
-
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
     mongoURL = process.env.OPENSHIFT_MONGODB_DB_URL || process.env.MONGO_URL,
@@ -33,6 +31,22 @@ if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
 
 var db = null,
     dbDetails = new Object();
+
+mongoURL = 'mongodb://localhost/musicstream';
+
+if (mongoURL != null) {
+  db = mongoose.connect(mongoURL, function(err) {
+    if (err) {
+      console.error('Could not connect to MongoDB!');
+      console.log(err);
+      return;
+    }
+
+    console.log('Connected to MongoDB at: %s', mongoURL);
+  });
+}
+
+var app = require('./config/express')(db);
 
 var initDb = function(callback) {
   if (mongoURL == null) return;
@@ -94,9 +108,11 @@ app.use(function(err, req, res, next){
   res.status(500).send('Something bad happened!');
 });
 
+/*
 initDb(function(err){
   console.log('Error connecting to Mongo. Message:\n'+err);
 });
+*/
 
 app.listen(port, ip);
 console.log('Server running on http://%s:%s', ip, port);
