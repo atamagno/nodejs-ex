@@ -1,6 +1,6 @@
 var init = require('./config/init')(),
-    config = require('./config/config');
-    //mongoose = require('mongoose');
+    config = require('./config/config'),
+    mongoose = require('mongoose');
 
 //console.log('DB CONNECTION STRING: ' + config.dbConnectionString());
 
