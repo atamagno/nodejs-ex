@@ -29,14 +29,13 @@ if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
   }
 }
 
-var db = null,
-    dbDetails = new Object();
+var db = null;
+    //dbDetails = new Object();
 
 //mongoURL = 'mongodb://localhost/musicstream';
 
 console.log('mongoURL: %s', mongoURL);
 
-/*
 if (mongoURL != null) {
   db = mongoose.connect(mongoURL, function(err) {
     if (err) {
@@ -48,11 +47,11 @@ if (mongoURL != null) {
     console.log('Connected to MongoDB at: %s', mongoURL);
   });
 }
-*/
 
 //var app = require('./config/express')(db);
 var app = require('./config/express')();
 
+/*
 var initDb = function(callback) {
   if (mongoURL == null) return;
 
@@ -112,6 +111,8 @@ app.use(function(err, req, res, next){
   console.error(err.stack);
   res.status(500).send('Something bad happened!');
 });
+
+*/
 
 /*
 initDb(function(err){
