@@ -32,7 +32,7 @@ if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
 var db = null,
     dbDetails = new Object();
 
-mongoURL = 'mongodb://localhost/musicstream';
+//mongoURL = 'mongodb://localhost/musicstream';
 
 if (mongoURL != null) {
   db = mongoose.connect(mongoURL, function(err) {
