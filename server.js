@@ -29,8 +29,8 @@ if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
   }
 }
 
-var db = null;
-    //dbDetails = new Object();
+var db = null,
+    dbDetails = new Object();
 
 //mongoURL = 'mongodb://localhost/musicstream';
 
@@ -51,7 +51,6 @@ if (mongoURL != null) {
 //var app = require('./config/express')(db);
 var app = require('./config/express')();
 
-/*
 var initDb = function(callback) {
   if (mongoURL == null) return;
 
@@ -112,7 +111,6 @@ app.use(function(err, req, res, next){
   res.status(500).send('Something bad happened!');
 });
 
-*/
 
 /*
 initDb(function(err){
