@@ -1,5 +1,6 @@
 var init = require('./config/init')(),
     config = require('./config/config'),
+    mongoose = require('mongoose'),
     morgan  = require('morgan');
 
 Object.assign=require('object-assign')
@@ -104,4 +105,4 @@ initDb(function(err){
 app.listen(port, ip);
 console.log('Server running on http://%s:%s', ip, port);
 
-module.exports = app ;
+exports = module.exports = app;
