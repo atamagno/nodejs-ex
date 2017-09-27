@@ -6,8 +6,7 @@ Object.assign=require('object-assign')
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
-    mongoURL = process.env.OPENSHIFT_MONGODB_DB_URL || process.env.MONGO_URL,
-    mongoURLLabel = "";
+    mongoURL = process.env.OPENSHIFT_MONGODB_DB_URL || process.env.MONGO_URL;
 
 if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
   var mongoServiceName = process.env.DATABASE_SERVICE_NAME.toUpperCase(),
@@ -18,21 +17,18 @@ if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
   mongoUser = process.env[mongoServiceName + '_USER'];
 
   if (mongoHost && mongoPort && mongoDatabase) {
-    mongoURLLabel = mongoURL = 'mongodb://';
     if (mongoUser && mongoPassword) {
       mongoURL += mongoUser + ':' + mongoPassword + '@';
     }
-    // Provide UI label that excludes user id and pw
-    mongoURLLabel += mongoHost + ':' + mongoPort + '/' + mongoDatabase;
     mongoURL += mongoHost + ':' +  mongoPort + '/' + mongoDatabase;
-
   }
+
+} else {
+  //mongoURL = 'mongodb://localhost/musicstream';
 }
 
-var db = null,
-    dbDetails = new Object();
+var db = null;
 
-mongoURL = 'mongodb://localhost/musicstream';
 //mongoURL = 'mongodb://userHWO:iJPa7ToVdNPpt5ke@127.0.0.1:27017/sampledb';
 
 console.log('mongoURL: %s', mongoURL);
@@ -51,9 +47,11 @@ if (mongoURL != null) {
 
 var app = require('./config/express')(db);
 
+/*
 app.get('/', function (req, res) {
     res.render('index.html', { pageCountMessage : null});
 });
+*/
 
 app.get('/pagecount', function (req, res) {
     res.send('{ pageCount: -1 }');
