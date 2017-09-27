@@ -32,7 +32,8 @@ if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
 var db = null,
     dbDetails = new Object();
 
-//mongoURL = 'mongodb://localhost/musicstream';
+mongoURL = 'mongodb://localhost/musicstream';
+//mongoURL = 'mongodb://userHWO:iJPa7ToVdNPpt5ke@127.0.0.1:27017/sampledb';
 
 console.log('mongoURL: %s', mongoURL);
 
@@ -74,6 +75,7 @@ var initDb = function(callback) {
   });
 };
 
+/*
 app.get('/', function (req, res) {
   // try to initialize the db on every request if it's not already
   // initialized.
@@ -106,6 +108,7 @@ app.get('/pagecount', function (req, res) {
     res.send('{ pageCount: -1 }');
   }
 });
+*/
 
 // error handling
 app.use(function(err, req, res, next){
