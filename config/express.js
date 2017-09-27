@@ -9,7 +9,7 @@ var express        = require('express'),
     consolidate    = require('consolidate'),
     config         = require('./config');
 
-module.exports = function(db) {
+module.exports = function() {
 
     config.getGlobbedFiles('./app/models/*.js').forEach(function(modelPath) {
         require(path.resolve(modelPath));
@@ -36,6 +36,7 @@ module.exports = function(db) {
     // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
     app.use(methodOverride());
 
+    /*
     // Express MongoDB session storage
     app.use(session({
         saveUninitialized: true,
@@ -46,6 +47,7 @@ module.exports = function(db) {
             collection: config.sessionCollection
         })
     }));
+    */
 
     // set the static files location /public/img will be /img for users
     app.use(express.static(path.resolve('./public')));
