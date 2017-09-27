@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab78edc5-6608-4e32-b7af-a6818929879e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/app_test.js" afterPath="$PROJECT_DIR$/tests/app_test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="openshift-v3-musicapp.iws" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72115386">
-              <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+            <state vertical-scroll-proportion="-1.2259616">
+              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -456,27 +455,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server.js</url>
-          <line>148</line>
+          <line>87</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server.js</url>
-          <line>150</line>
+          <line>89</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server.js</url>
-          <line>149</line>
+          <line>88</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server.js</url>
-          <line>151</line>
+          <line>90</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server.js</url>
-          <line>156</line>
+          <line>95</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -496,16 +495,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server.js</url>
-          <line>123</line>
+          <line>62</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server.js</url>
-          <line>142</line>
+          <line>81</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server.js</url>
+          <line>46</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="45" />
+      <option name="time" value="52" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -810,14 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/express.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/app_test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -826,10 +822,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72115386">
-          <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+        <state vertical-scroll-proportion="-1.2259616">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
           <folding />
         </state>
       </provider>
