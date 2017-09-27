@@ -34,6 +34,18 @@ if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
 var db = null,
     dbDetails = new Object();
 
+if (mongoURL != null) {
+    db = mongoose.connect(mongoURL, function(err) {
+        if (err) {
+            console.error('Could not connect to MongoDB!');
+            console.log(err);
+            return;
+        }
+
+        console.log('Connected to MongoDB at: %s', mongoURL);
+    });
+}
+
 app.get('/pagecount', function (req, res) {
   res.send('{ pageCount: -1 }');
 });
