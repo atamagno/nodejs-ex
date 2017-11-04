@@ -2,7 +2,7 @@
 
 angular.module('core').config(
 	function($stateProvider, $urlRouterProvider) {
-		/*
+
 		$urlRouterProvider.otherwise('/');
 
 		$stateProvider.
@@ -34,8 +34,8 @@ angular.module('core').config(
 				url: '/',
 				templateUrl: 'modules/core/views/main.client.view.html'
 			});
-		*/
-		
+
+		/*
 		$urlRouterProvider.otherwise('/connect');
 		
 		$stateProvider.
@@ -67,4 +67,5 @@ angular.module('core').config(
 				url: '^/video',
 				templateUrl: 'modules/core/views/video.client.view.html'
 			});
+			*/
 	});
